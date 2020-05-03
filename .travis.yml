@@ -7,3 +7,6 @@ services:
 
 script:
   - make ci-test
+  - docker build -f Dockerfile . -t panchajanya1999/archlinux:latest
+  - echo "$password" | docker login -u "panchajanya1999" --password-stdin
+  - docker push panchajanya1999/archlinux:latest
