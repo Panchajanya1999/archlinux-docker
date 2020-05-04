@@ -12,4 +12,5 @@ pacman -S --noconfirm \
                  cmake svn lzip git make patchelf zip \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel glibc \
-                 sudo jdk8-openjdk
+                 sudo jdk8-openjdk bison cmake flex libelf \
+                 ninja openssl python3 uboot-tools neofetch
