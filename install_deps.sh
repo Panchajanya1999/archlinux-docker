@@ -12,4 +12,4 @@ pacman -S --noconfirm \
                  cmake svn lzip git make patchelf zip \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel glibc \
-                 sudo 
+                 sudo jdk8-openjdk
