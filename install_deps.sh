@@ -14,3 +14,6 @@ pacman -S --noconfirm \
                  clang bc ccache multilib-devel glibc \
                  sudo jdk8-openjdk bison cmake flex libelf \
                  ninja openssl python3 uboot-tools neofetch
+
+# Fix pod2man missing error
+export PATH=/usr/bin/core_perl:$PATH
