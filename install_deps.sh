@@ -8,7 +8,7 @@ pacman -Syyu --noconfirm
 
 # Install basic packages
 pacman -S --noconfirm \
-                 wget  \
+                 wget nano  \
                  cmake svn lzip git make patchelf zip \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel glibc \
