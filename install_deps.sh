@@ -17,3 +17,6 @@ pacman -S --noconfirm \
 
 # Fix pod2man missing error
 export PATH=/usr/bin/core_perl:$PATH
+
+# Create a symlink for z3
+ln -s /usr/lib/libz3.so /usr/lib/libz3.so.4
