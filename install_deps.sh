@@ -8,7 +8,8 @@ pacman -Syyu --noconfirm
 
 # Install basic packages
 pacman -S --noconfirm \
-                 wget nano asp \
+                 wget nano asp kmod libelf pahole xmlto \
+                 python-sphinx python-sphinx_rtd_theme graphviz imagemagick \
                  cmake svn lzip git make patchelf zip \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel glibc z3 \
