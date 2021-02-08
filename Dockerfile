@@ -1,5 +1,7 @@
-FROM scratch
-ADD archlinux.tar /
+FROM archlinux:base-devel
+
+USER root
+
 ENV LANG=en_US.UTF-8
 CMD ["/usr/bin/bash"]
 
