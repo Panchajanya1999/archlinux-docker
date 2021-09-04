@@ -14,7 +14,7 @@ pacman -S --noconfirm \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel z3 \
                  sudo jdk8-openjdk bison cmake flex libelf \
-                 ninja openssl python3 uboot-tools neofetch
+                 ninja openssl python3 uboot-tools neofetch ncurses
 
 # Use glibc-2.33-4-x86
 curl -fsSL "https://repo.archlinuxcn.org/x86_64/glibc-linux4-2.33-4-x86_64.pkg.tar.zst" | bsdtar -C / -xvf - &>/dev/null
