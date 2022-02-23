@@ -13,7 +13,7 @@ pacman -S --noconfirm \
                  cmake svn lzip git make patchelf zip \
                  inetutils python2 lld llvm base-devel\
                  clang bc ccache multilib-devel glibc z3 \
-                 sudo jdk8-openjdk bison cmake flex libelf cpio \
+                 sudo jdk8-openjdk bison cmake flex libelf cpio unzip \
                  ninja openssl python3 uboot-tools neofetch ncurses
 
 # Fix pod2man missing error
