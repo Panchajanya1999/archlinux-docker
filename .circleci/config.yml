@@ -19,8 +19,6 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-          command: "sudo "
-      - run:
           name: "Start Building"
           command: "sudo docker build -f Dockerfile . -t panchajanya1999/archlinux:latest && echo '86abc7fb-21f7-4d31-a622-baf52d49f41f' | sudo docker login -u 'panchajanya1999' --password-stdin && sudo docker push panchajanya1999/archlinux:latest"
 
