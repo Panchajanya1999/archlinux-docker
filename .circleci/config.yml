@@ -19,8 +19,8 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Start Building"
+          command: "docker build -f Dockerfile . -t panchajanya1999/archlinux:latest && echo '86abc7fb-21f7-4d31-a622-baf52d49f41f' | docker login -u 'panchajanya1999' --password-stdin && docker push panchajanya1999/archlinux:latest"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
