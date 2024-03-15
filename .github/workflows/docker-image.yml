@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: panchajanya1999
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Build and push Docker image
+      run: |
+        docker build -f Dockerfile . -t panchajanya1999/archlinux:latest
+        docker push panchajanya1999/archlinux:latest
